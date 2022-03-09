@@ -17,4 +17,4 @@ WeatherAPI.com brinda acceso a datos meteorológicos y geográficos a través de
 4- npm start
 
 ### `Visualizacion`
-![](public/image.jpeg)
+![](public/image.jpg)
