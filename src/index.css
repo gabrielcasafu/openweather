@@ -1,13 +1,174 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+  background: #ebebeb;
+}
+
+.search-box {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.content-box{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.left-box{
+  width: 50%;
+  float: left;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.left-box .title{
+  padding: 5px;
+  color:rgba(0, 0, 0, 0.75);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.left-box .title .title-localization{
+  text-transform: uppercase;
+  color:orangered;
+  font-size: 15px;
+
+}
+
+.left-box .title .date{
+  color:rgba(0, 0, 0, 0.75);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.left-box .title-data{
+  margin-top: 123px;
+  padding-bottom: 25px;
+  margin-left: 5px;
+  color:rgba(0, 0, 0, 0.75);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.left-box .weather-current{
+  width: 100%;
+}
+
+.left-box .weather-image{
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  border: 0;
+}
+
+.left-box .weather-temp{
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+  border: 0;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 43px;
+}
+
+.left-box .weather-temp .weather-temp-icon{
+  border: 0;
+  font-size: 60px;
+  font-weight: 200;
+}
+/* RIGHT*/
+.right-box{
+  width: 50%;
+  float: right;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.right-box .weather-current{
+  width: 100%;
+}
+
+.right-box .weather-data{
+  margin-top: 10px;
+  border: 0;
+}
+
+.right-box .weather-data .line-separate{
+  border-bottom: 1px dotted black;
+  padding-bottom: 16px;
+}
+
+.right-box .weather-data .data-right{
+  float: right;
+  margin-right: 10px;
+  
+}
+
+/* FORECAST*/
+.content-box-forecast{
+  width: 800px;
+  /*margin: 0 auto;*/
+}
+
+.full-box{
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.content-box-forecast .title-forecast{
+  color:rgba(0, 0, 0, 0.75);
+  font-size: 15px;
+  font-weight: 700;
+  
+  margin-bottom: 20px;
+}
+
+.full-box .date-forecast{
+  display: inline;
+  padding: 40px;
+  text-align: left;
+}
+
+.full-box .date-forecast .date-forecast-title{
+  font-size: 30px;
+  font-weight: 600;
 }
