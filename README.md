@@ -12,7 +12,7 @@ WeatherAPI.com brinda acceso a datos meteorológicos y geográficos a través de
 ### `npm start`
 
 1- git clone https://github.com/gabrielcasafu/openweather.git
-2- cd weatherapi
+2- cd openweather
 3- npm install
 4- npm start
 
